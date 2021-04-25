@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::view('/home', 'home')->middleware('auth');
 
 require __dir__.'/admin.php';
+
+Route::post('file/upload', 'FileController@store')->name('file.upload');
+Route::post('upload', 'FileController@upload')->name('upload');

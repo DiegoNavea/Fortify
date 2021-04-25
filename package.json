@@ -24,5 +24,9 @@
         "sass": "^1.32.1",
         "sass-loader": "^10.1.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    },
+    "dependencies": {
+        "dropzone": "^5.9.2",
+        "webpack": "^5.35.0"
     }
 }

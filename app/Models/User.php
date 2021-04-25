@@ -41,4 +41,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    /**
+     * This function will define the relationship between the file and the user
+     *
+     * @var array
+     */
+    public function files()
+    {
+       return $this->hasMany(File::class);
+    }
+    
+    public function uploads()
+    {
+       return $this->hasMany(Upload::class);
+    }
 }
